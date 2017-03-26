@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>
+Login Page
+</title>
+<script src="angular.js"></script>
+<script src="controllers.js"></script>
+</head>
+<body ng-app="myApp">
+<form ng-controller="loginctrl">
+Enter a name:<input type="text" ng-model="name"/>
+<br>
+<br>
+Enter a password:<input type="password" ng-model="pass" />
+<br>
+<br>
+<button ng-click="submit()">LOGIN</button>
+</form>
+
+<div>Hello {{name}}</div>
+
+</body>
+</html>
